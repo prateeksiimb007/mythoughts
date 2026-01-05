@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,15 @@
     <meta name="description" content="A space for deep thoughts, creative ideas, and technical explorations.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="noise-overlay"></div>
-    
+
     <header class="glass-header">
         <nav>
             <div class="logo">My<span class="highlight">Thoughts</span>.</div>
@@ -31,7 +35,7 @@
                 <p class="subtitle">A curated collection of ideas, tutorials, and musings on technology and design.</p>
                 <a href="#latest" class="cta-button">Start Reading</a>
             </div>
-            
+
             <div class="hero-visual fade-in-up delay-1">
                 <div class="floating-card card-1">
                     <span class="tag">Design</span>
@@ -47,14 +51,15 @@
         <section id="latest" class="latest-posts">
             <h2 class="section-title">Latest Writings</h2>
             <div class="grid-container">
-                <!-- Article 1 -->
-                <article class="blog-card fade-in-on-scroll">
+                <!-- Article 1: Invent & Simplify -->
+                <article class="blog-card fade-in-on-scroll" onclick="window.location.href='invent-and-simplify.html'">
                     <div class="card-image gradient-bg-1"></div>
                     <div class="card-content">
-                        <span class="date">Oct 24, 2025</span>
-                        <h3>Designing for the Future</h3>
-                        <p>How spacing, typography, and color theory shape modern web experiences.</p>
-                        <a href="#" class="read-more">Read Article <span class="arrow">→</span></a>
+                        <span class="date">Jan 05, 2026</span>
+                        <h3>Invent & Simplify</h3>
+                        <p>A case study on killing bad processes and redefining the analytics feedback loop.</p>
+                        <a href="invent-and-simplify.html" class="read-more">Read Article <span
+                                class="arrow">→</span></a>
                     </div>
                 </article>
 
@@ -68,7 +73,7 @@
                         <a href="#" class="read-more">Read Article <span class="arrow">→</span></a>
                     </div>
                 </article>
-                
+
                 <!-- Article 3 -->
                 <article class="blog-card fade-in-on-scroll">
                     <div class="card-image gradient-bg-3"></div>
@@ -94,4 +99,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
