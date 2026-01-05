@@ -1,248 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
+INVENT AND SIMPLIFY
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invent & Simplify | My Thoughts</title>
-    <meta name="description"
-        content="Leaders expect innovation. A case study on simplifying the analytics feedback loop.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .article-container {
-            max-width: 800px;
-            margin: 120px auto 4rem;
-            padding: 0 2rem;
-        }
+Leaders expect and require innovation and invention from their teams and always find ways to simplify. They are externally aware, look for new ideas from everywhere, and are not limited by “not invented here”. As we do new things, we accept that we may be misunderstood for long periods of time.
 
-        .article-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
+Think about killing bad products and simplifying new products, not just “inventing”! Always keeping some room open for exploration.
 
-        .article-meta {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            display: block;
-        }
+Tell me about a time when you gave a simple solution to a complex problem. Tell me about the most innovative project you’ve done. Why did you think it was
+innovative?
 
-        .article-content {
-            font-family: var(--font-body);
-            font-size: 1.1rem;
-            color: #d4d4d8;
-        }
+Situation
+When I was a Product Owner for the IT Performance Dashboard, my team owned the full analytics lifecycle—ETL, business logic, and Power BI dashboards.
+ One recurring challenge was finalizing dashboard visualizations before production. Visualization was the final customer experience, so getting it wrong meant expensive rework.
+Task
+Our goal was to validate dashboard design quickly, build stakeholder alignment, and reduce waste before production release—but the existing process wasn’t working.
+Problem
+The standard approach was sprint-review feedback sessions, but this created three major issues:
+Small sample size – Only 4–5 stakeholders attended reviews, so feedback wasn’t representative.
 
-        .article-content h2 {
-            font-family: var(--font-heading);
-            color: var(--text-primary);
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-        }
 
-        .article-content h3 {
-            color: #e4e4e7;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
-        }
+Fragmented experience – Feedback focused on individual screens, not the end-to-end user journey (drill-downs, linked views).
 
-        .article-content p {
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
 
-        .article-content ul {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-        }
+No consensus – Stakeholders gave conflicting opinions asynchronously, often after missing reviews, leading to repeated redesigns.
 
-        .article-content li {
-            margin-bottom: 0.5rem;
-            color: #d4d4d8;
-        }
 
-        .highlight-box {
-            background: rgba(109, 40, 217, 0.1);
-            border-left: 4px solid var(--accent);
-            padding: 1.5rem;
-            border-radius: 0 8px 8px 0;
-            margin: 2rem 0;
-            font-style: italic;
-        }
+Despite this inefficiency, the process had become “accepted” and no one questioned it.
 
-        .stat-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
+Action (Invent & Simplify)
+I stepped back and asked: “Why are we treating visualization feedback like code reviews instead of product experience validation?”
+P1 – External thinking & invention
+ I researched alternative approaches and discovered a Power BI integration within Microsoft Teams that allowed dashboards to be published directly to a team workspace—creating a near-production experience without a formal app release.
+P2 – Simplification with data-backed decision making
+ Before proposing the change, I worked with the dev manager to quantify effort:
+App-based releases required ~12 story points (~60 hours) per iteration
 
-        .stat-card {
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-        }
 
-        .stat-value {
-            display: block;
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: #A78BFA;
-            margin-bottom: 0.5rem;
-        }
+Estimated recurring cost: ~₹15,000/year per dashboard for updates and re-releases
 
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
 
-        .back-link {
-            display: block;
-            margin-top: 4rem;
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
+With clear cost and effort visibility, I presented a proposal to leadership to pivot away from early app releases, which was approved immediately.
+P3 – Scalable feedback mechanism
+ Instead of sprint-review discussions:
+Dashboards were published directly to Teams
 
-        .back-link:hover {
-            color: var(--text-primary);
-        }
-    </style>
-</head>
 
-<body>
-    <div class="noise-overlay"></div>
+Stakeholders experienced full drill-downs and linked views
 
-    <header class="glass-header">
-        <nav>
-            <div class="logo">My<span class="highlight">Thoughts</span>.</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#latest">All Posts</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="article-container fade-in-up">
-        <header class="article-header">
-            <span class="article-meta">
-                January 5, 2026 • Product Management •
-                <a href="https://github.com/prateeksiimb007/mythoughts/edit/gh-pages/invent-and-simplify.html"
-                    target="_blank" style="color: var(--accent); text-decoration: none;">Edit this post</a>
-            </span>
-            <h1>Invent & Simplify: Redefining the Feedback Loop</h1>
-        </header>
+I introduced polls for design variants
 
-        <article class="article-content">
-            <p class="highlight-box">
-                "Leaders expect and require innovation and invention from their teams and always find ways to simplify.
-                They are externally aware, look for new ideas from everywhere, and are not limited by 'not invented
-                here'."
-            </p>
 
-            <p>
-                When we think of innovation, we often think of brand new products. But true leadership involves killing
-                bad products and simplifying new processes, not just "inventing" for the sake of it.
-            </p>
-            <p>
-                Here is a story about a time I had to invent a simpler solution to a complex problem.
-            </p>
+A shared Excel sheet captured structured feedback
 
-            <h2>The Situation</h2>
-            <p>
-                When I was a Product Owner for the IT Performance Dashboard, my team owned the full analytics
-                lifecycle—ETL, business logic, and Power BI dashboards. One recurring challenge was finalizing dashboard
-                visualizations before production. Visualization was the final customer experience, so getting it wrong
-                meant expensive rework.
-            </p>
 
-            <h2>The Problem</h2>
-            <p>
-                Our goal was to validate dashboard design quickly, build stakeholder alignment, and reduce waste before
-                production release—but the existing process wasn't working. The standard approach was sprint-review
-                feedback sessions, which created three major issues:
-            </p>
-            <ul>
-                <li><strong>Small sample size:</strong> Only 4–5 stakeholders attended reviews, so feedback wasn’t
-                    representative.</li>
-                <li><strong>Fragmented experience:</strong> Feedback focused on individual screens, not the end-to-end
-                    user journey (drill-downs, linked views).</li>
-                <li><strong>No consensus:</strong> Stakeholders gave conflicting opinions asynchronously, often after
-                    missing reviews, leading to repeated redesigns.</li>
-            </ul>
-            <p>Despite this inefficiency, the process had become "accepted" and no one questioned it.</p>
+Consolidated results were published transparently, and explicit sign-off was taken on the final direction
 
-            <h2>Action: Invent & Simplify</h2>
-            <p>I stepped back and asked: <em>"Why are we treating visualization feedback like code reviews instead of
-                    product experience validation?"</em></p>
 
-            <h3>1. External Thinking & Invention</h3>
-            <p>I researched alternative approaches and discovered a Power BI integration within Microsoft Teams that
-                allowed dashboards to be published directly to a team workspace—creating a near-production experience
-                without a formal app release.</p>
+This forced alignment in one channel and pushed business owners to resolve disagreements collaboratively.
 
-            <h3>2. Simplification with Data-Backed Decisions</h3>
-            <p>Before proposing the change, I worked with the dev manager to quantify effort:</p>
-            <ul>
-                <li>App-based releases required ~12 story points (~60 hours) per iteration.</li>
-                <li>Estimated recurring cost: ~₹15,000/year per dashboard for updates and re-releases.</li>
-            </ul>
-            <p>With clear cost and effort visibility, I presented a proposal to leadership to pivot away from early app
-                releases, which was approved immediately.</p>
 
-            <h3>3. Scalable Feedback Mechanism</h3>
-            <p>Instead of sprint-review discussions, dashboards were published directly to Teams where stakeholders
-                experienced full drill-downs and linked views. I introduced polls for design variants and a shared Excel
-                sheet for structured feedback. Consolidated results were published transparently, and explicit sign-off
-                was taken on the final direction.</p>
 
-            <h2>The Result</h2>
-            <div class="stat-grid">
-                <div class="stat-card">
-                    <span class="stat-value">27%</span>
-                    <span class="stat-label">Reduction in Rework</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-value">60+</span>
-                    <span class="stat-label">Hours Saved / Iteration</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-value">100%</span>
-                    <span class="stat-label">Faster Engagement</span>
-                </div>
-            </div>
+Result
+Reduced rework by 27% (12 out of 45 planned stories eliminated)
 
-            <p>
-                We reduced rework by 27% (12 out of 45 planned stories eliminated), cut weeks of development time, and
-                avoided hundreds of email threads. The process was later adopted across the entire Data & Analytics
-                group and shared as a best practice via the monthly newsletter.
-            </p>
 
-            <h2>Why This Was Innovative</h2>
-            <p>
-                This wasn’t about new technology—it was about rethinking the feedback model. We killed an inefficient
-                "standard" process, simplified release cycles, and treated dashboards as products, not deliverables. It
-                allowed us to move faster, cheaper, and with far less friction—while improving customer experience.
-            </p>
-        </article>
+Cut weeks of development time and hundreds of email threads
 
-        <a href="index.html" class="back-link">← Back to Home</a>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 My Thoughts. All rights reserved.</p>
-    </footer>
+Faster stakeholder engagement—users started interacting with dashboards earlier in the lifecycle
 
-    <script src="script.js"></script>
-</body>
 
-</html>
+Higher satisfaction due to clarity and transparency
+
+
+The process was later adopted across the entire Data & Analytics group and shared as a best practice via the monthly newsletter
+
+
+
+Why This Was Innovative
+This wasn’t about new technology—it was about rethinking the feedback model:
+We killed an inefficient “standard” process
+
+
+Simplified release cycles
+
+
+Treated dashboards as products, not deliverables
+
+
+Used existing tools in a new, scalable way
+
+
+It allowed us to move faster, cheaper, and with far less friction—while improving customer experience.
